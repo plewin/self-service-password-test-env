@@ -1,0 +1,7 @@
+version: '2'
+services:
+  openldap:
+    image: 'osixia/openldap'
+    ports:
+      - "4389:389"
+      - "4636:636"

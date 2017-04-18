@@ -1,0 +1,24 @@
+dn: ou=policies,dc=example,dc=org
+ou: Policies
+objectClass: organizationalUnit
+
+dn: cn=default,ou=policies,dc=example,dc=org
+objectClass: pwdPolicy
+objectClass: applicationProcess
+objectClass: top
+cn: default
+pwdAttribute: userPassword
+pwdCheckQuality: 0
+pwdMinAge: 0
+pwdMaxAge: 0
+pwdMinLength: 8
+pwdInHistory: 5
+pwdMaxFailure: 3
+pwdFailureCountInterval: 0
+pwdLockout: TRUE
+pwdLockoutDuration: 0
+pwdAllowUserChange: TRUE
+pwdExpireWarning: 0
+pwdGraceAuthNLimit: 0
+pwdMustChange: FALSE
+pwdSafeModify: FALSE
